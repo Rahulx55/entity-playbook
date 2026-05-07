@@ -1,29 +1,49 @@
 body {
-  font-family: Arial;
-  background: #0f172a;
+  background: linear-gradient(135deg, #0f172a, #020617);
   color: white;
+  font-family: Segoe UI, Arial;
   text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 36px;
+}
+
+.summary {
+  margin: 20px;
+  font-size: 18px;
+  color: #cbd5f5;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  padding: 20px;
+  gap: 20px;
+  padding: 30px;
 }
 
 .card {
-  background: #1e293b;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }
+
+/* Color-coded steps */
+.define { background: #3b82f6; }
+.stakeholders { background: #06b6d4; }
+.data { background: #22c55e; }
+.model { background: #84cc16; }
+.config { background: #eab308; }
+.change { background: #f97316; }
+.health { background: #ef4444; }
+.adoption { background: #ec4899; }
+.governance { background: #8b5cf6; }
+.intake { background: #6366f1; }
 
 .card:hover {
-  background: #334155;
-}
-
-#details {
-  margin-top: 30px;
-  padding: 20px;
+  transform: scale(1.05);
 }
