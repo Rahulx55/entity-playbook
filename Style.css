@@ -1,0 +1,29 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #334155;
+}
+
+#details {
+  margin-top: 30px;
+  padding: 20px;
+}
