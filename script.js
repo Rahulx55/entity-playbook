@@ -1,5 +1,4 @@
 function openStep(step) {
-
   let content = "";
 
   if (step === "define") {
@@ -12,12 +11,17 @@ function openStep(step) {
     `;
   }
 
-  else if (step === "data") {
+  if (step === "data") {
     content = `
       <h2>Data Validation</h2>
-      <p>Check data sources, identify gaps, validate usage.</p>
+      <p>Identify sources, validate usage, detect gaps.</p>
     `;
   }
 
-  document.getElementById("details").innerHTML = content;
+  document.getElementById("modal-body").innerHTML = content;
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
 }

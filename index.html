@@ -16,17 +16,22 @@
 
 <div class="grid">
 
-  <div class="card" onclick="openStep('define')">Define Entity</div>
-  <div class="card" onclick="openStep('stakeholders')">Stakeholders</div>
-  <div class="card" onclick="openStep('data')">Data Validation</div>
-  <div class="card" onclick="openStep('model')">Model Validation</div>
-  <div class="card" onclick="openStep('config')">Configuration</div>
-  <div class="card" onclick="openStep('change')">Change Mgmt</div>
-  <div class="card" onclick="openStep('health')">Health Metrics</div>
-  <div class="card" onclick="openStep('adoption')">Adoption</div>
-  <div class="card" onclick="openStep('governance')">Governance</div>
-  <div class="card" onclick="openStep('intake')">Intake</div>
+  <div class="card define" onclick="openStep('define')">Define Entity</div>
+  <div class="card stakeholders" onclick="openStep('stakeholders')">Stakeholders</div>
+  <div class="card data" onclick="openStep('data')">Data Validation</div>
+  <div class="card model" onclick="openStep('model')">Model Validation</div>
+  <div class="card change" onclick="openStep('change')">Change Mgmt</div>
+  <div class="card health" onclick="openStep('health')">Health Metrics</div>
+  <div class="card adoption" onclick="openStep('adoption')">Adoption</div>
+  <div class="card governance" onclick="openStep('governance')">Governance</div>
 
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <div id="modal-body"></div>
+  </div>
 </div>
 
 <div id="details"></div>
